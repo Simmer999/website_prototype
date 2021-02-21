@@ -1,0 +1,207 @@
+/* =================================================================================== */
+/* html and body */
+/* =================================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+body {
+    overflow: hidden; /* Hide scrollbars */
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+}
+/* =================================================================================== */
+/* detail formatting */
+/* =================================================================================== */
+h1 {
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    font-size: .8em;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =================================================================================== */
+/* form items */
+/* =================================================================================== */
+/* form {
+    position: relative;
+    left: 20px;
+    margin-top: 5px;
+} */
+
+input[type='text'], button[type='submit'] {
+    background-color : #53affa; 
+    margin: 0 auto;
+    height: 10px;
+}
+
+/* =================================================================================== */
+/* Section and grid format*/
+/* =================================================================================== */
+section {
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    display: grid;
+    background-color: #570f0f;
+    grid-template-columns: 40% 20% 1fr 1fr;
+    grid-template-rows: 20% 20% 1fr 1fr;
+    grid-template-areas: 
+    "div1 div2 div2 div2"
+    "div1 div3 div3 div3"
+    "div1 div4 . ."
+    "div5 div4 div6 .";
+}
+
+#home-section {
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    display: grid;
+    background-color: #570f0f;
+    grid-template-columns: 40% 20% 1fr 1fr;
+    grid-template-rows: 20% 20% 1fr 1fr;
+    grid-template-areas: 
+    "div1 div2 div2 div2"
+    "div1 div3 div3 div3"
+    "div1 div4 . ."
+    "div5 div4 div6 .";
+}
+
+#mongo-section {
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    display: grid;
+    background-color: #570f0f;
+    grid-template-columns: 40% 20% 1fr 1fr;
+    grid-template-rows: 20% 20% 1fr 1fr;
+    grid-template-areas: 
+    ". div2 div2 div2"
+    "div1 div1 div1 div1"
+    "div1 div1 div1 div1"
+    "div1 div1 div1 div1";
+}
+
+#typing-section {
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    display: grid;
+    background-color: #570f0f;
+    grid-template-columns: 40% 20% 1fr 1fr;
+    grid-template-rows: 20% 20% 1fr 1fr;
+    grid-template-areas: 
+    "div2 div2 div2 div2"
+    "div3 div4 div4 div4"
+    "div3 div4 div4 div4"
+    "div3 div4 div4 div4";
+}
+
+section div {
+    background-color: darkblue;   
+    border-radius: 10px;
+    border: 3px solid black;  
+    color: #53affa;      
+}
+/* =================================================================================== */
+/* divs */
+/* =================================================================================== */
+#div1 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    grid-area: div1;
+    overflow-y: scroll;
+}
+#div1::-webkit-scrollbar {
+    display: none;
+}
+#div2 {
+    margin: 0 10px 10px 10px;
+
+    grid-area: div2;
+}
+#div3 {
+    overflow-y: scroll;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    grid-area: div3;
+}
+#div3::-webkit-scrollbar {
+    display: none;
+}
+#div4 {
+    overflow-y: scroll;
+    padding-left: 30px;
+    grid-area: div4;
+    margin: 0 10px 10px 10px;
+}
+#div4::-webkit-scrollbar {
+    display: none;
+}
+svg {
+ 
+    position: right;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    z-index: 2;
+}
+#div5 {
+    position: relative;
+    margin-right: 10px;
+    grid-area: div5;
+    border: none;
+    background-color: #570f0f;
+}
+#div6 {
+    position: relative;
+    margin-right: 10px;
+    grid-area: div6;
+    border: none;
+    background-color: #570f0f;
+}
+#arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+/* =================================================================================== */
+/* footer */
+/* =================================================================================== */
+.footerP {
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.quote-3 {
+    display: block;
+}
+.quote-4 {
+    display: inline;
+}
+ul {
+    list-style-type: none;
+}

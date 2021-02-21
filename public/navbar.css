@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkblue;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #53affa;
+  /* text-align: center; */
+  
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #257fc9;
+  color: black;
+}
+
+/* Add a green background color to the active link */
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+  display: none;
+}
+
+input[type='text'], button[type='submit'] {
+  background-color : #53affa; 
+  margin: 0px;
+  height: 8px;
+  padding: 0px;
+}

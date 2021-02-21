@@ -1,0 +1,47 @@
+
+<%- include('head'); %>
+
+<section id="mongo-section">
+    <h3>This will be the space to experiment with the material
+       from Mongodb University.<br><br> MongoForever!!</h3>
+       <!-- </h3><h3> -->
+      <div id=div2>
+        <div class="navbar" id="myNavbar">
+            <a href="/">Home</a>
+            <a href="mongo">Mongo</a>
+            <a href="movies">Movies</a>                
+            <a href="simmer999">simmer999</a>
+          </div>
+    </div>   
+
+    <div id=div1>
+        <ul class="quotes">
+           <!-- Loop through quotes -->
+           <% for(var i = 0; i < entries.length; i++) {%>
+             <li class="quote">
+               <!-- Output name from the iterated quote object -->
+               <span><%= entries[i].name %></span>:
+               <!-- Output quote from the iterated quote object -->
+               <span><%= entries[i].email%></span>
+               <span><%= entries[i].rrr%></span>
+               <span><%= entries[i].title%></span>
+               <br>
+               : <span><%= entries[i].year%></span>
+               <br>
+               : <span><%= entries[i].plot%></span>
+             </li>
+             <br>
+           <% } %>
+         </ul>
+    </div>
+
+    <!-- <div id=div3></div>
+    <div id=div4></div> -->
+    
+</section>
+<div id=div5>
+    <p class='footerP'>© Copyright 2021 simmer999</p>
+</div>
+
+
+<%- include('footer'); %>

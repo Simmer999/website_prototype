@@ -1,0 +1,30 @@
+form {
+    position: relative;
+    left: 5px;
+    margin: 5px;
+}
+form input[type='text'], form input[type='number'], form button[type='submit'] {
+    display: block;
+    border: none;
+    width: 200px;
+    height: 16px;
+    background-color : #53affa; 
+    margin-bottom: 1px;
+}
+#update-button, #delete-button {
+    background-color : #53affa;
+    float: right;
+    margin: 5px;
+}
+#message {
+    background-color : #53affa;
+    color: black;
+    float: right;
+    margin: 5px;
+    height: 40px;
+    width: 140px;
+    border-radius: 0;
+}
+
+
+

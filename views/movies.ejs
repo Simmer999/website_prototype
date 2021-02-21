@@ -1,0 +1,45 @@
+
+<%- include('head'); %>
+
+    <section id="mongo-section">
+        <h3>This will be the space to experiment with the material
+           from Mongodb University.<br><br> MongoForever!!</h3>
+           <!-- </h3><h3> -->
+          <div id=div2>
+            <div class="navbar" id="myNavbar">
+              <a href="/"><h3>Home</h3></a>
+              <a href="users"><h3>Users</h3></a>
+              <a href="movies"><h3>Movies</h3></a>                
+              <a href="http://www.simondevine.org/"><h3>simmer999</h3></a>
+              <a href="#"><h3>Open</h3></a>               
+            </div>
+        </div>   
+
+        <div id=div1>
+            <ul class="quotes">
+               <!-- Loop through quotes -->
+               <% for(var i = 0; i < entries.length; i++) {%>
+                 <li class="quote">
+                   <!-- These are entries from the 'movies' collection> -->
+                   <span><%= entries[i].title%></span>
+                   <br>
+                   : <span><%= entries[i].year%></span>
+                   <br>
+                  : <span><%= entries[i].plot%></span>
+                  </li>
+                  <br>
+                  <!-- End -->
+               <% } %>
+             </ul>
+        </div>
+
+        <!-- <div id=div3></div>
+        <div id=div4></div> -->
+        
+    </section>
+    <div id=div5>
+        <p class='footerP'>© Copyright 2021 simmer999</p>
+    </div>
+
+
+<%- include('footer'); %>
